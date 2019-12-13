@@ -1,0 +1,8 @@
+---
+- name: Installing Git and WGET
+  yum:
+    name: git
+    state: latest
+  yum:
+    name: wget
+    state: latest
