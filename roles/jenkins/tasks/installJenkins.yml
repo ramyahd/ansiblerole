@@ -1,0 +1,14 @@
+---
+- name: Install Jenkins
+  yum:
+    name: jenkins
+    state: present
+- name: Start the server
+    service:
+      name: jenkins
+      state: started
+      enabled: yes
+- name: Opening Firewall for port 8080
+    shell: sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+- name: Reloading Firewall
+    shell: sudo firewall-cmd --reload
