@@ -4,4 +4,4 @@
  
 - name: Import Jenkins CI key
   rpm_key:
-  key: http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+       key: http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
