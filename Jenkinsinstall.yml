@@ -1,5 +1,5 @@
 ---
 - hosts: ans_hosts 
   roles:
-     role: jenkins
-     become: yes
+     - jenkins
+     
